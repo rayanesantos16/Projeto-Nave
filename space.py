@@ -1,6 +1,6 @@
 #definir as váriavéis
 
-combustivel = 110
+combustivel = 100
 tribulantes = []
 
 #definir funções
@@ -17,7 +17,7 @@ def viajar():
 
 def abastecer():
     global combustivel
-    combustivel = 110
+    combustivel = 100
     print("Tanque cheio! 🛸")
 
 def status_nave():
