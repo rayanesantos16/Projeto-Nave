@@ -16,12 +16,13 @@ def viajar():
             print("A nave viajou")
         else:
             print("Você não possui combustível suficiente para viajar. Abasteça!!")
-    
+        travamenu()
 
 def abastecer():
     global combustivel
     combustivel = 100
     print("Tanque cheio! 🛸")
+    travamenu()
 
 def status_nave():
     #mostre a quantidade de combustível e os tripulantes
@@ -29,11 +30,13 @@ def status_nave():
     print(f"\nAtualmente, temos {combustivel} litros no tanque!")
     print(f"\nNossa tripulação é composta por: {tripulantes}\n")
     print("----------------------------------------\n")
+    travamenu()
 
 def registrar_Tripulantes():
     novotripulante = input("qual é o nome do novo tripulante?")
     tripulantes.append(novotripulante)
     print("Novo tripulante inserido com sucesso!🚀")
+    travamenu()
 
 def retirar_tripulantes():
     if retirar_tripulantes == "sim" and tripulantes != []:
@@ -43,6 +46,9 @@ def retirar_tripulantes():
     else:
          print(f"Nossa nave não tem  tripulantes")
          print ("Interação encerrada")
+
+def travamenu():
+    input("\nPressione <ENTER> para continuar...")
 
 #criar um menu
 print("Bem vindo ao menu interativo da nave. Por favor, selecione uma opçâo:")
