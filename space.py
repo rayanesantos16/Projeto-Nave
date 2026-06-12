@@ -1,18 +1,21 @@
 #definir as váriavéis
 
-combustivel = 100
+combustivel =100
 tripulantes = []
 
 #definir funções
 
 def viajar():
-    #aqui fica o código
-    global combustivel # avisa a função que vamos modificar um variavel externa
-    if combustivel>=30:
-        combustivel = combustivel - 30
-        print("A nave viajou")
+    global combustivel 
+    if (len(tripulantes)==0):
+        print(" Não á tripulantes")
+
     else:
-        print("Você não possui combustível suficiente para viajar. Abasteça!!")
+        if (combustivel>=30):
+            combustivel = combustivel - 30
+            print("A nave viajou")
+        else:
+            print("Você não possui combustível suficiente para viajar. Abasteça!!")
     
 
 def abastecer():
