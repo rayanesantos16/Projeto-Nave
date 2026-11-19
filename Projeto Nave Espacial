@@ -1,0 +1,19 @@
+ Projeto nave espacial
+
+Projeto em Python com menu interativo no terminal para gerenciar combustível, tripulação e viagens de uma nave espacial.
+
+Funcionalidade
+
+- Mostrar status da nave: exibe o nível atual de combustível (em litros) e a lista de tripulantes.
+- Viajar: consome 30 litros de combustível por viagem, desde que haja pelo menos 1 tripulante a bordo e combustível suficiente.
+- Abastecer: restaura o tanque para 100 litros.
+- Novo tripulante: adiciona um tripulante à lista da nave.
+- Retirar tripulante: remove o último tripulante adicionado.
+- Sair: encerra o loop do menu e finaliza a execução.
+
+Como executar
+
+1. Salve o código em um arquivo, por exemplo `nave.py`.
+2. Abra o terminal na pasta do arquivo e execute:
+python nave.py
+
